@@ -1,8 +1,6 @@
-# Reading data from a file
+#Reading data from the file.
 try:
-    with open("sample.txt", "r") as file1:
-        data=file1.read()
-        print(data)
-# file not found error handling
+    with open("sample.txt", "r") as file:
+        print(file.read())
 except FileNotFoundError:
-    print("Error: The file 'sample.txt' not found.")
+    print("Error: sample.txt file not found.")
